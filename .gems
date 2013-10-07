@@ -1,0 +1,2 @@
+pdfkit -v 0.5.4
+faker -v 1.2.0

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title><%= title %></title>
+
+  <link rel="stylesheet" href="../assets/stylesheets/foundation.min.css">
+</head>
+<body>
+  <div class="tweets">
+    <% tweets.each_slice(2) do |pair| %>
+      <div class="row">
+        <% pair.each do |tweet| %>
+          <div class="small-6 columns">
+            <div class="alert-box radius" data-alert="">
+              <%= tweet %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</body>
+</html>
